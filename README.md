@@ -30,3 +30,11 @@
 - Função de criação de perguntas.
 - Consumindo perguntas do Firebase.
 - (Extra) - Integração dos eventos "child_added", "child_removed" e "child_changed".
+
+## Aula 4
+
+- Criação do hook `useRoom`
+- Funcionalidade de like
+- Funcionalidade de remoção de pergunta
+- Funcionalidade de encerramento de sala
+- (Extra) - Remoção dos eventos "child_added", "child_removed" e "child_changed" para integração prévia.
