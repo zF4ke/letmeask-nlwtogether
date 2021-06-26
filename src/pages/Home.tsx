@@ -5,7 +5,7 @@ import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
 import googleIconImg from '../assets/images/google-icon.svg'
 
-import { Button } from '../components/Button'
+import { Button } from '../components/Button/'
 import { useAuth } from '../hooks/useAuth'
 
 import '../styles/auth.scss'
@@ -30,6 +30,7 @@ export function Home() {
     const roomRef = await database.ref(`rooms/${roomCode}`).get()
 
     if(!roomRef.exists()) return alert('Room does not exists.')
+    if(roomRef.val().closedAt) return alert('Room already closed.')
 
     history.push(`/rooms/${roomCode}`)
   }
